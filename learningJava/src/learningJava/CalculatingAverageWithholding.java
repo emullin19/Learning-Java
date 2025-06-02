@@ -19,7 +19,7 @@ public class CalculatingAverageWithholding {
 	System.out.print ("Please input your weekly income to the nearest cent: $");
 	
 	//Initializing userWeeklyIncome to the user's input. 
-	userWeeklyIncome = scnr.nextFloat();
+	userWeeklyIncome = scnr.nextDouble();
 	
 	//If the user's income is less than $500, initialize taxRate to 10%.
 	if(userWeeklyIncome < 500) {
@@ -48,7 +48,7 @@ public class CalculatingAverageWithholding {
 	//Initialize averageTaxWithholding to the product of the user's weekly income and the applicable tax rate.
 	averageTaxWithholding = userWeeklyIncome * taxRate;
 	
-	//Declaring the String variable averageTaxWithheld and using the format() method to round the average to two decimal places.
+	//Declaring the String averageTaxWithheld and using the format() method to round the average to two decimal places.
 	String averageTaxWithheld = String.format("%.2f", averageTaxWithholding);
 	
 	//Print the user's weekly average tax withheld to the nearest cent.
