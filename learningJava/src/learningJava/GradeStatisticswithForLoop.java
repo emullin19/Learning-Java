@@ -45,11 +45,17 @@ public class GradeStatisticswithForLoop {
 		
 	}
 	
-	System.out.println ("\nAverage Class Grade: " + (gradesTotal / 10));
+	String averageClassGrade = String.format("%.2f", (gradesTotal / 10));
 	
-	System.out.println ("Maximum Class Grade: " + maximumGrade);
+	String maximumClassGrade = String.format("%.2f", maximumGrade);
 	
-	System.out.println ("Minimum Class Grade: " + minimumGrade);
+	String minimumClassGrade = String.format("%.2f", minimumGrade);
+	
+	System.out.println ("\nAverage Class Grade: " + averageClassGrade);
+	
+	System.out.println ("Maximum Class Grade: " + maximumClassGrade);
+	
+	System.out.println ("Minimum Class Grade: " + minimumClassGrade);
 	
 	scnr.close();
 
