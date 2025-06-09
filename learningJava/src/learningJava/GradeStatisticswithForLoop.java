@@ -39,6 +39,9 @@ public class GradeStatisticswithForLoop {
 			classGrade = scnr.nextFloat();
 		}
 		
+		//Initializing gradesTotal to sum of the current total and the user's current input.
+		gradesTotal = gradesTotal + classGrade;
+		
 		//If the class grade is greater than the maximum grade, set maximumGrade equal to that value.
 		if(classGrade > maximumGrade && classGrade <= 100) {
 			
@@ -52,9 +55,6 @@ public class GradeStatisticswithForLoop {
 			minimumGrade = classGrade;
 			
 		}
-		
-		//Initializing gradesTotal to sum of the current total and the user's current input.
-		gradesTotal = gradesTotal + classGrade;
 		
 	}
 	
