@@ -33,26 +33,24 @@ public class GradeStatisticswithForLoop {
 		//Initializing gradesTotal to sum of the current total and the user's current input.
 		gradesTotal = gradesTotal + classGrade;
 		
-		//If the user's input is greater than 100 or less than 0, ask the user to input a valid grade.
-		while (classGrade > 100 || classGrade < 0) {
-					
-			System.out.print ("\nInvalid input. Please enter a valid grade: ");
-			
-			classGrade = scnr.nextFloat();
-		}
-		
 		//If the class grade is greater than the maximum grade, set maximumGrade equal to that value.
-		if(classGrade > maximumGrade && classGrade <= 100) {
+		if(classGrade > maximumGrade) {
 			
 			maximumGrade = classGrade;
 			
 		}
 		
 		//If the class grade is less than the minimum grade, set minimumGrade equal to that value.
-		if(classGrade < minimumGrade && classGrade >= 0) {
+		if(classGrade < minimumGrade) {
 			
 			minimumGrade = classGrade;
 			
+		}
+		
+		//If the user's input is greater than 100 or less than 0, ask the user to input a valid grade.
+		if (classGrade > 100 || classGrade < 0) {
+			
+			System.out.print ("\nInvalid input. Please enter a valid grade: ");
 		}
 		
 	}
