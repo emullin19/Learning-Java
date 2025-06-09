@@ -34,14 +34,14 @@ public class GradeStatisticswithForLoop {
 		gradesTotal = gradesTotal + classGrade;
 		
 		//If the class grade is greater than the maximum grade, set maximumGrade equal to that value.
-		if(classGrade > maximumGrade) {
+		if(classGrade > maximumGrade && classGrade <= 100) {
 			
 			maximumGrade = classGrade;
 			
 		}
 		
 		//If the class grade is less than the minimum grade, set minimumGrade equal to that value.
-		if(classGrade < minimumGrade) {
+		if(classGrade < minimumGrade && classGrade >= 0) {
 			
 			minimumGrade = classGrade;
 			
