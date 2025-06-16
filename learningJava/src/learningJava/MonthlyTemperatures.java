@@ -71,7 +71,7 @@ public class MonthlyTemperatures {
 				System.out.println ("\n" + monthName[i] + ": " + monthlyAverageTemperatures[i]);
 			}
 			
-			System.out.println ("\n\n2024 Yearly Average Temperature: " + yearlyAverageTemperature);
+			System.out.println ("\n\n2024 Yearly Average Temperature: " + String.format("%.2f", yearlyAverageTemperature));
 		
 			System.out.println ("Highest Monthly Temperature: " + monthName[highestMonthIndex]);
 		
