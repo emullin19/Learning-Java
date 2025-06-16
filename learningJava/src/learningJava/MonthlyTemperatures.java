@@ -9,7 +9,7 @@ public class MonthlyTemperatures {
 		String [] monthName = {"January", "February", "March", "April", "May", "June",
 					"July", "August", "September", "October", "November", "December"};
 	
-		double [] monthlyAverageTemperatures = {31.0, 33.0, 40.0, 47.0, 56.0, 66.0, 71.0, 68.0, 61.0, 50.0, 39.0, 31.0};
+		double [] monthlyAverageTemperatures = {29.9, 38.7, 42.0, 50.2, 56.3, 71.5, 72.6, 71.9, 66.4, 57.2, 37.6, 37.8};
 		
 		Scanner scnr = new Scanner (System.in);
 		
@@ -68,14 +68,14 @@ public class MonthlyTemperatures {
 		
 			for(i = 0; i < 12; i++) {
 				
-				System.out.println ("\n" + monthName[i] + ": " + monthlyAverageTemperatures[i]);
+				System.out.println ("\n" + monthName[i] + ": " + monthlyAverageTemperatures[i] + "°F");
 			}
 			
-			System.out.println ("\n\n2024 Yearly Average Temperature: " + String.format("%.2f", yearlyAverageTemperature));
+			System.out.println ("\n\n2024 Yearly Average Temperature: " + String.format("%.2f", yearlyAverageTemperature) + "°F");
 		
-			System.out.println ("Highest Monthly Temperature: " + monthName[highestMonthIndex]);
+			System.out.println ("Highest Monthly Temperature: " + monthlyAverageTemperatures[highestMonthIndex] + "°F in " + monthName[highestMonthIndex]);
 		
-			System.out.println ("Lowest Monthly Temperature: " + monthName[lowestMonthIndex]);
+			System.out.println ("Lowest Monthly Temperature: " + monthlyAverageTemperatures[lowestMonthIndex] + "°F in " + monthName[lowestMonthIndex]);
 			
 		}
 		
@@ -93,7 +93,7 @@ public class MonthlyTemperatures {
 			
 			if(monthNameIndex != -1) {
 				
-				System.out.print ("\n\n" + monthName[monthNameIndex] + " Average Monthly Temperature: " + monthlyAverageTemperatures[monthNameIndex]);
+				System.out.print ("\n\n" + monthName[monthNameIndex] + " Average Monthly Temperature: " + monthlyAverageTemperatures[monthNameIndex] + "°F");
 			
 			}
 			
